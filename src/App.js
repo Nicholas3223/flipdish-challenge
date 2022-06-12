@@ -14,8 +14,6 @@ function App() {
     dispatch(fetchMenuItems());
   }, [dispatch]);
 
-  console.log('menuData', menuData)
-
   return (
     <div className="menuApp__container">
       <p className="menuApp__title">Flipdish Menu</p>

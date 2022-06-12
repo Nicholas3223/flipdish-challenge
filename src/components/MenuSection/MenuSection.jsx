@@ -4,10 +4,11 @@ import calculatedPrice from '../utils/calculatedPrice';
 import './MenuSection.css';
 
 const MenuSection = ({ sectionData }) => {
+  const filteredSectionData = sectionData.MenuItems.filter((item) => item.ImageUrl);
   return(
     <>
       <p className='menuApp__MenuSection--title'>{sectionData.Name}</p>
-      {sectionData.MenuItems.map((item, index) => {
+      {filteredSectionData.map((item, index) => {
         return(
           <div key={index.toString()} className='menuApp__MenuSection--detailsContainer'>
             <div className='menuApp__MenuSection--imageDetailsContainer'>
