@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import MenuSection from './components/MenuSection/MenuSection';
+import { fetchMenuItems } from './actions/menuActions';
 import './App.css';
 
 function App() {
+
+  const dispatch = useDispatch();
+  const { menuData } = useSelector((state) => state.menuReducer);
+
+  useEffect(() => {
+    dispatch(fetchMenuItems());
+  }, [dispatch]);
+
+  console.log('menuData', menuData)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="menuApp__container">
+      <p className="menuApp__title">Flipdish Menu</p>
+      {menuData.map((section) => {
+        return(
+          <MenuSection
+            key={section.MenuSectionId?.toString()}
+            sectionData={section}
+          />
+        )})
+      }
     </div>
   );
 }

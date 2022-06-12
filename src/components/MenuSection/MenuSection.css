@@ -1,0 +1,49 @@
+.menuApp__MenuSection--detailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.menuApp__MenuSection--imageDetailsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuApp__MenuSection--image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.menuApp__MenuSection--title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.menuApp__MenuSection--nameDetails {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.menuApp__MenuSection--descriptionDetails {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.menuApp__MenuSection--price {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+
+.menuApp__MenuSection--detailsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}

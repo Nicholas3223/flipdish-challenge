@@ -1,0 +1,2 @@
+export const FETCH_MENU_ITEMS = 'FETCH_MENU_ITEMS'; 
+export const FETCH_ERROR = 'FETCH_ERROR';
