@@ -21,10 +21,13 @@
       MenuSections: [
         {
           Name: 'Starters',
-          MMenuItems: [
+          MenuSectionId: 98,
+          MenuItems: [
             {
               Price: 5,
               Name: 'Salad',
+              ImageUrl: 'www.image.com',
+              PublicId: 12,
               MenuItemOptionSets: [
                 {
                   IsMasterOptionSet: false,
@@ -39,6 +42,8 @@
             {
               Price: 3,
               Name: 'Chips',
+              ImageUrl: 'www.image.com',
+              PublicId: 34,
               MenuItemOptionSets: [
                 {
                   IsMasterOptionSet: false,
@@ -54,10 +59,13 @@
         },
         {
           Name: 'Mains',
+          MenuSectionId: 76,
           MenuItems: [
             {
               Price: 15,
               Name: 'Steak',
+              ImageUrl: 'www.image.com',
+              PublicId: 56,
               MenuItemOptionSets: [
                 {
                   IsMasterOptionSet: true,
@@ -72,6 +80,8 @@
             {
               Price: 14,
               Name: 'Chicken',
+              ImageUrl: 'www.image.com',
+              PublicId: 78,
               MenuItemOptionSets: [
                 {
                   IsMasterOptionSet: true,
@@ -99,10 +109,13 @@ const mockAppState = {
     menuData: [
       {
         Name: 'Starters',
+        MenuSectionId: 98,
         MenuItems: [
           {
             Price: 5,
             Name: 'Salad',
+            ImageUrl: 'www.image.com',
+            PublicId: 12,
             MenuItemOptionSets: [
               {
                 IsMasterOptionSet: false,
@@ -117,6 +130,8 @@ const mockAppState = {
           {
             Price: 3,
             Name: 'Chips',
+            ImageUrl: 'www.image.com',
+            PublicId: 34,
             MenuItemOptionSets: [
               {
                 IsMasterOptionSet: false,
@@ -132,10 +147,13 @@ const mockAppState = {
       },
       {
         Name: 'Mains',
+        MenuSectionId: 76,
         MenuItems: [
           {
             Price: 15,
             Name: 'Steak',
+            ImageUrl: 'www.image.com',
+            PublicId: 56,
             MenuItemOptionSets: [
               {
                 IsMasterOptionSet: true,
@@ -150,6 +168,8 @@ const mockAppState = {
           {
             Price: 14,
             Name: 'Chicken',
+            ImageUrl: 'www.image.com',
+            PublicId: 78,
             MenuItemOptionSets: [
               {
                 IsMasterOptionSet: true,

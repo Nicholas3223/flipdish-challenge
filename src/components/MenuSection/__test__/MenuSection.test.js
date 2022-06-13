@@ -24,28 +24,17 @@
  const store = mockStore(initialState);
 
  const sectionMockData = {
-  Name: 'Mains',
+  Name: 'Starters',
+  MenuSectionId: 98,
   MenuItems: [
     {
-      Price: 15,
-      Name: 'Steak',
+      Price: 5,
+      Name: 'Salad',
+      ImageUrl: 'www.image.com',
+      PublicId: 12,
       MenuItemOptionSets: [
         {
-          IsMasterOptionSet: true,
-          MenuItemOptionSetItems: [
-            {
-              Price: 6,
-            },
-          ],
-        },
-      ],
-    },
-    {
-      Price: 14,
-      Name: 'Chicken',
-      MenuItemOptionSets: [
-        {
-          IsMasterOptionSet: true,
+          IsMasterOptionSet: false,
           MenuItemOptionSetItems: [
             {
               Price: 2,
@@ -54,8 +43,24 @@
         },
       ],
     },
-  ],
- }
+    {
+      Price: 3,
+      Name: 'Chips',
+      ImageUrl: 'www.image.com',
+      PublicId: 34,
+      MenuItemOptionSets: [
+        {
+          IsMasterOptionSet: false,
+          MenuItemOptionSetItems: [
+            {
+              Price: 2,
+            },
+          ],
+        },
+      ],
+    },
+  ]
+}
  
  test('renders correct data and price if IsMasterOptionsSet is true', () => {
    render(
@@ -64,8 +69,8 @@
      </Provider>
    )
 
-   const menuItemName = screen.getByText(/steak/i);
+   const menuItemName = screen.getByText(/salad/i);
    expect(menuItemName).toBeVisible();
-   const menuItemPrice = screen.getByText(/6/i);
+   const menuItemPrice = screen.getByText(/3/i);
    expect(menuItemPrice).toBeVisible();
  });
