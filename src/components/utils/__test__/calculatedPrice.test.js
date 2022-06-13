@@ -14,7 +14,6 @@ test('calculatedPrice returns correct figure if IsMasterOptionSet is false', () 
       },
     ],
   };
-
   expect(calculatedPrice(item)).toEqual(5);
 });
 
@@ -32,6 +31,5 @@ test('calculatedPrice returns correct figure if IsMasterOptionSet is true', () =
       },
     ],
   };
-
   expect(calculatedPrice(item)).toEqual(2);
 });

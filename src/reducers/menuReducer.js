@@ -8,7 +8,6 @@ const initialState = {
 const menuReducer = (state = initialState, action) => {
   switch(action.type) {
     case FETCH_MENU_ITEMS:
-    const menuFilter = action.payload.MenuSections.filter((section) => section.MenuItems.length);
       return {
         ...state,
         menuData: action.payload.MenuSections.filter((section) => section.MenuItems.length),

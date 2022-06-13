@@ -62,15 +62,15 @@
   ]
 }
  
- test('renders correct data and price if IsMasterOptionsSet is true', () => {
+ test('renders correct data and price if IsMasterOptionsSet is false', () => {
    render(
      <Provider store={store}>
        <MenuSection sectionData={sectionMockData} />
      </Provider>
    )
 
-   const menuItemName = screen.getByText(/salad/i);
+   const menuItemName = screen.getByText(/Salad/);
    expect(menuItemName).toBeVisible();
-   const menuItemPrice = screen.getByText(/3/i);
+   const menuItemPrice = screen.getByText(/5/);
    expect(menuItemPrice).toBeVisible();
  });

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+.menuApp__MenuSection--title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
 .menuApp__MenuSection--detailsContainer {
   display: flex;
   flex-direction: row;
@@ -27,9 +32,12 @@
   padding: 5px;
 }
 
-.menuApp__MenuSection--title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+.menuApp__MenuSection--detailsTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 20px;
 }
 
 .menuApp__MenuSection--nameDetails {
@@ -50,12 +58,4 @@
   margin: 20px;
 
   font-family: "Open Sans", sans-serif;
-}
-
-.menuApp__MenuSection--detailsTextContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  margin: 20px;
 }

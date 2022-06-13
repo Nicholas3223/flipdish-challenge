@@ -101,7 +101,7 @@
 };
  
 jest.mock('./actions/menuActions', () => ({
-  fetchMenuItems: () => menuMockData
+  fetchMenuItems: () => menuMockData,
 }));
  
 const mockAppState = {
@@ -185,7 +185,7 @@ const mockAppState = {
       },
     ],
     fetchError: '',
-  }
+  },
 };
  
  const mockDispatch = jest.fn();

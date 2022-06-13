@@ -5,7 +5,7 @@ import MenuSection from './components/MenuSection/MenuSection';
 import { fetchMenuItems } from './actions/menuActions';
 import './App.css';
 
-function App() {
+const App = () => {
 
   const dispatch = useDispatch();
   const { menuData } = useSelector((state) => state.menuReducer);
@@ -13,8 +13,6 @@ function App() {
   useEffect(() => {
     dispatch(fetchMenuItems());
   }, [dispatch]);
-
-  console.log('menuData', menuData);
 
   return (
     <div className="menuApp__container">
